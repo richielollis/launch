@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href= "./assets/css/materialize.css">
     <title>Launch!</title>
 </head>
 <body>
@@ -13,8 +15,8 @@
             <img id="logo" src="./assets/Launch Logo.png"/> 
         </div>
     </nav>
-    <div id="form-banner">
-        <h1>Welcome to Launch!</h1>
+    <div id="form-banner" class="blue darken-4">
+        <h1 class="blue darken-4">Welcome to Launch!</h1>
          <!-- form to enter name -->
         <h3>Enter your name:</h3>
         <form id="name-input">
@@ -37,14 +39,29 @@
         
 
     </div>
-    <div id="Rocket-info">
+    <div class="row">
+
+    <div id="rocket-section" class="col s4">
         <h3>Your Rocket!</h3>
+        <div class="row">
+            <div class="col s12 m7">
+              <div class="card">
+                <div class="card-image">
+                  <img id="rocket-image" src="">
+                </div>
+                <div id="rocket-info" class="card-content">
+                  <p>Rocket Information</p>
+                  </div>
+              </div>
+            </div>
+          </div>
         <!-- picture of rocket -->
         <!-- info about rocket -->
     </div>
-    <div id="Weather">
+    <div id="Weather" class="col s8">
         <h3>Weather on Mars when you arrive!</h3>
         <!-- weather on mars -->
+    </div>
     </div>
 </body>
 </html>
