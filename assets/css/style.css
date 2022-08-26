@@ -1,4 +1,4 @@
-#nav-bar{
+/* #nav-bar{
     height: 75px;
     align-items: center;
 }
@@ -16,4 +16,36 @@
 #dropdown{
     z-index: 9999999;
     outline: 1px solid red;
-}
+} */
+
+  /* label color */
+  .input-field label {
+    color: #ffeb3b;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #ffeb3b;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #ffeb3b;
+    box-shadow: 0 1px 0 0 #ffeb3b;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #ffeb3b;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #ffeb3b;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #ffeb3b;
+  }
+
+  #findbtn{
+    background-color: #ff6f00; 
+  }

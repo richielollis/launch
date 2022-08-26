@@ -9,25 +9,63 @@
     <title>Launch!</title>
   </head>
   <body>
-    <nav id="nav-bar" class="indigo darken-4 center">
+    <!-- to do: 
+    opacity of card? rounding card corners? adding logo? background color or image?-->
+    <div id=welcome-card class="row center">
+        <div class="col s12 m6">
+          <div class="card indigo darken-4">
+            <div class="card-content yellow-text">
+              <span class="card-title">Welcome Astronaut!</span>
+              <div class="row">
+                <div class="input-field col s4 offset-s4">
+                  <input value="Enter Your Name" id="first_name" type="text" class="validate yellow-text center">
+                </div>
+
+                <div class="input-field col s6 offset-s3">
+                    <p class="amber-text text-darken-3">Choose the word that describes you:</p>
+                    <select id=trait-input class="browser-default s6 yellow">
+                      <option value="" disabled selected>Select One</option>
+                      <option value="1">Outgoing</option>
+                      <option value="2">Introverted</option>
+                      <option value="3">Brave</option>
+                      <option value="4">Witty</option>
+
+                    </select>
+                  </div>
+              </div>
+            <div class="card-action">
+                <a id=findbtn class="waves-effect waves-light btn">Blast Off</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+    <!-- <nav id="nav-bar" class="indigo darken-4 center"> -->
       <!-- img for logo -->
-      <img
+      <!-- <img
         id="logo-img"
         class="responsive-img center"
         src="./assets/Launch Logo.png"
       />
     </nav>
-    <div id="form-banner" class="indigo darken-4 center-align">
+    <div id="form-banner" class="indigo darken-4 center-align"> -->
       <!-- Name Input template only- will be created from JS -->
-      <h1 class="yellow-text">Welcome to Launch, Astronaut!</h1>
+      <!-- <h1 class="yellow-text">Welcome to Launch, Astronaut!</h1>
       <h4 class="white-text">Enter your name:</h4>
       <input id="name-input" class="yellow center-align" />
 
-      <div>
+      <div> -->
         <!-- form for personality trait -->
 
         <!-- <h4 class="white-text">Choose the word that best describes you:</h4> -->
-        <div class="input-field col s12 white">
+        <!-- <div class="input-field col s12 white"> -->
         <!-- <select id="dropdown">
           <option value="Select One" disabled selected>Select One</option>
           <option value="Outgoing">Outgoing</option>
@@ -35,12 +73,12 @@
           <option value="Brave">Brave</option>
           <option value="Witty">Witty</option>
         </select> -->
-        <label>Trait Select</label>
+        <!-- <label>Trait Select</label>
         </div>
-      </div>
+      </div> -->
       <!-- button to submit form -->
-      <button id="Submit-form">Blast Off!</button>
-    </div>
+      <!-- <button id="Submit-form">Blast Off!</button> -->
+    <!-- </div> -->
     <!-- astronaut name -->
     <div id="Astro-name"></div>
     <div class="row">
