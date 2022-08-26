@@ -1,27 +1,15 @@
-/* #nav-bar{
-    height: 75px;
-    align-items: center;
+#logo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#logo-img{
-    align-content: center;
-    padding: 5px;
-    height: 78px;
-}
-
-#name-input{
-    width: 50%;
-}
-
-#dropdown{
-    z-index: 9999999;
-    outline: 1px solid red;
-} */
 
 .style {
   background-image: url(/assets/background-image.jpg);
   background-size: cover;
  }
+
 
    /* label color */
    .input-field label {
@@ -53,4 +41,8 @@
 
   #findbtn{
     background-color: #80d8ff; 
+  }
+
+  #card-title {
+    font-size: 72px;
   }
