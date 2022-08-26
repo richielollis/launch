@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Launch!</title>
+  </head>
+  <body>
+    <nav id="nav-bar" class="indigo darken-4 center">
+      <!-- img for logo -->
+      <img
+        id="logo-img"
+        class="responsive-img center"
+        src="./assets/Launch Logo.png"
+      />
+    </nav>
+    <div id="form-banner" class="indigo darken-4 center-align">
+      <!-- Name Input template only- will be created from JS -->
+      <h1 class="yellow-text">Welcome to Launch, Astronaut!</h1>
+      <h4 class="white-text">Enter your name:</h4>
+      <input id="name-input" class="yellow center-align" />
+
+      <div>
+        <!-- form for personality trait -->
+
+        <!-- <h4 class="white-text">Choose the word that best describes you:</h4> -->
+        <div class="input-field col s12 white">
+        <!-- <select id="dropdown">
+          <option value="Select One" disabled selected>Select One</option>
+          <option value="Outgoing">Outgoing</option>
+          <option value="Introverted">Introverted</option>
+          <option value="Brave">Brave</option>
+          <option value="Witty">Witty</option>
+        </select> -->
+        <label>Trait Select</label>
+        </div>
+      </div>
+      <!-- button to submit form -->
+      <button id="Submit-form">Blast Off!</button>
+    </div>
+    <!-- astronaut name -->
+    <div id="Astro-name"></div>
+    <div class="row">
+      <div id="rocket-section" class="col s4">
+        <h3>Your Rocket!</h3>
+        <div class="row">
+          <div class="col s12 m7">
+            <div class="card">
+              <div class="card-image">
+                <img id="rocket-image" src="" />
+              </div>
+              <div id="rocket-info" class="card-content">
+                <p>Rocket Information</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- picture of rocket -->
+        <!-- info about rocket -->
+      </div>
+      <div id="Weather" class="col s8">
+        <h3>Weather on Mars when you arrive!</h3>
+        <!-- weather on mars -->
+      </div>
+    </div>
+  </body>
 </html>

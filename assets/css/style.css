@@ -1,0 +1,19 @@
+#nav-bar{
+    height: 75px;
+    align-items: center;
+}
+
+#logo-img{
+    align-content: center;
+    padding: 5px;
+    height: 78px;
+}
+
+#name-input{
+    width: 50%;
+}
+
+#dropdown{
+    z-index: 9999999;
+    outline: 1px solid red;
+}
