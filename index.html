@@ -9,27 +9,32 @@
     <title>Launch!</title>
   </head>
   <body>
-    <!-- to do: 
-    opacity of card? rounding card corners? adding logo? background color or image?-->
+    <style>
+      body {
+      background-image: url(./assets/background-image.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>   
+      <!-- opacity of card? rounding card corners? adding logo? background color or image?-->
     <div id=welcome-card class="row center">
         <div class="col s12 m6">
-          <div class="card indigo darken-4">
-            <div class="card-content yellow-text">
+          <div class="card grey darken-4">
+            <div class="card-content light-blue-text text-accent-1">
               <span class="card-title">Welcome Astronaut!</span>
               <div class="row">
                 <div class="input-field col s4 offset-s4">
-                  <input value="Enter Your Name" id="first_name" type="text" class="validate yellow-text center">
+                  <input value="Enter Your Name" id="first_name" type="text" class="validate white-text center">
                 </div>
 
                 <div class="input-field col s6 offset-s3">
-                    <p class="amber-text text-darken-3">Choose the word that describes you:</p>
-                    <select id=trait-input class="browser-default s6 yellow">
+                    <p class="light-blue-text text-accent-1">Choose the word that describes you:</p>
+                    <select id=trait-input class="browser-default s6 white">
                       <option value="" disabled selected>Select One</option>
                       <option value="1">Outgoing</option>
                       <option value="2">Introverted</option>
                       <option value="3">Brave</option>
-                      <option value="4">Witty</option>
-
                     </select>
                   </div>
               </div>
@@ -80,7 +85,7 @@
       <!-- <button id="Submit-form">Blast Off!</button> -->
     <!-- </div> -->
     <!-- astronaut name -->
-    <div id="Astro-name"></div>
+    <!-- <div id="Astro-name"></div>
     <div class="row">
       <div id="rocket-section" class="col s4">
         <h3>Your Rocket!</h3>
@@ -95,13 +100,13 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!-- picture of rocket -->
         <!-- info about rocket -->
-      </div>
+      <!-- </div>
       <div id="Weather" class="col s8">
         <h3>Weather on Mars when you arrive!</h3>
-        <!-- weather on mars -->
+        weather on mars -->
       </div>
     </div>
   </body>

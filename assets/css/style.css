@@ -18,8 +18,13 @@
     outline: 1px solid red;
 } */
 
-  /* label color */
-  .input-field label {
+.style {
+  background-image: url(/assets/background-image.jpg);
+  background-size: cover;
+ }
+
+   /* label color */
+   .input-field label {
     color: #ffeb3b;
   }
   /* label focus color */
@@ -47,5 +52,5 @@
   }
 
   #findbtn{
-    background-color: #ff6f00; 
+    background-color: #80d8ff; 
   }
