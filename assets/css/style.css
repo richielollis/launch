@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-img {
-    max-width: 300px;
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-=======
 #logo-image {
   display: block;
   margin-left: auto;
@@ -23,39 +11,44 @@ body {
  }
 
 
-   /* label color */
-   .input-field label {
-    color: #ffeb3b;
-  }
-  /* label focus color */
-  .input-field input[type=text]:focus + label {
-    color: #ffeb3b;
-  }
-  /* label underline focus color */
-  .input-field input[type=text]:focus {
-    border-bottom: 1px solid #ffeb3b;
-    box-shadow: 0 1px 0 0 #ffeb3b;
-  }
-  /* valid color */
-  .input-field input[type=text].valid {
-    border-bottom: 1px solid #ffeb3b;
-    box-shadow: 0 1px 0 0 #000;
-  }
-  /* invalid color */
-  .input-field input[type=text].invalid {
-    border-bottom: 1px solid #ffeb3b;
-    box-shadow: 0 1px 0 0 #000;
-  }
-  /* icon prefix focus color */
-  .input-field .prefix.active {
-    color: #ffeb3b;
-  }
+/* label color */
+.input-field label {
+  color: #ffeb3b;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #ffeb3b;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #ffeb3b;
+  box-shadow: 0 1px 0 0 #ffeb3b;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #ffeb3b;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #ffeb3b;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #ffeb3b;
+}
 
-  #findbtn{
-    background-color: #80d8ff; 
-  }
+#findbtn:hover {
+  background-color: #ff5757;
+}
 
-  #card-title {
-    font-size: 72px;
-  }
->>>>>>> 830a941ff506310f348b614b762ee3fc98a08cb3
+#findbtn{
+  background-color: #80d8ff; 
+}
+
+#card-title {
+  font-size: 72px;
+}
+
+

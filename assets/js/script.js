@@ -3,12 +3,11 @@ var userData = {};
 var today = new Date().toISOString().slice(0,10);
 userData.day = today;
 
-var userName = function(event) {
-    event.preventDefault();
+var userName = function() {
     userData = JSON.parse(localStorage.getItem('name'));
     if(userData && userData.hasOwnProperty('name')) {
         // append name to header
-        $('#span').text('Hey')
+        $('#findbtn').text('Hey');
     } else {
         // grab name from form input once blastoff button is clicked
         var name = $('.validate').val();
@@ -16,9 +15,15 @@ var userName = function(event) {
         // set name to local storage to be able to be used later and for page reload once user has already entered name
     }
 
-    $('#card').remove();
-    getSpaceInfo();
+
+    $('#welcome-card').remove();
+    
 }
+
+var blastoff = function(event) {
+    event.preventDefault();
+    getSpaceInfo();
+};
 
 var getSpaceInfo  = function() {
     fetch(`https://api.nasa.gov/neo/rest/v1/feed?start_date=${today}&end_date=${today}&api_key=8mtv2mUNhRq4AdcG3eLJYaGFiJyctDairkAmuZoa`)
@@ -49,7 +54,7 @@ var asteroids = function(nasaInfo) {
     var numberOfAsteroids = nasaInfo.element_count;
     console.log(numberOfAsteroids);
     // display how many asteroids the astronaut may encounter on their journey to mars 
-
+    
     
 };
 
@@ -73,4 +78,5 @@ var showUserRocket = function(spacexInfo) {
 
 //https://api.nasa.gov/insight_weather/?api_key=8mtv2mUNhRq4AdcG3eLJYaGFiJyctDairkAmuZoa&feedtype=json&ver=1.0
 
-$('button').on('click', userName);
+$('#findbtn').on('click', );
+userName();
