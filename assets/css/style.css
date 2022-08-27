@@ -1,0 +1,48 @@
+#logo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.style {
+  background-image: url(/assets/background-image.jpg);
+  background-size: cover;
+ }
+
+
+   /* label color */
+   .input-field label {
+    color: #ffeb3b;
+  }
+  /* label focus color */
+  .input-field input[type=text]:focus + label {
+    color: #ffeb3b;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid #ffeb3b;
+    box-shadow: 0 1px 0 0 #ffeb3b;
+  }
+  /* valid color */
+  .input-field input[type=text].valid {
+    border-bottom: 1px solid #ffeb3b;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* invalid color */
+  .input-field input[type=text].invalid {
+    border-bottom: 1px solid #ffeb3b;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  /* icon prefix focus color */
+  .input-field .prefix.active {
+    color: #ffeb3b;
+  }
+
+  #findbtn{
+    background-color: #80d8ff; 
+  }
+
+  #card-title {
+    font-size: 72px;
+  }

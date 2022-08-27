@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="icon" href="./assets/browser-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand&display=swap" rel="stylesheet">
+    <title>Launch!</title>
+  </head>
+  <body>
+    <img id="logo-image" src="./assets/Launch Logo.png" alt="launch-logo">
+    <style>
+      body {
+      background-image: url(./assets/background-image.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family:"khand",sans-serif;
+    }
+    </style>   
+      <!-- opacity of card? rounding card corners? adding logo? background color or image?-->
+    <div id="welcome-card" class="row center">
+        <div class="col s12 m6 l6 offset-m3 offset-l3">
+          <div class="card grey darken-4">
+            <div class="card-content light-blue-text text-accent-1">
+              <span class="card-title"><h2>Welcome Astronaut!</h2></span>
+              <div class="row">
+                <div class="input-field col s4 offset-s4">
+                  <input value="Enter Your Name" id="first_name" type="text" class="validate white-text center">
+                </div>
+
+                <div class="input-field col s6 offset-s3">
+                    <h5 class="light-blue-text text-accent-1">Choose the word that describes you:</h5>
+                    <select id=trait-input class="browser-default s6 white">
+                      <option value="" disabled selected>Select One</option>
+                      <option value="1">Outgoing</option>
+                      <option value="2">Introverted</option>
+                      <option value="3">Brave</option>
+                    </select>
+                  </div>
+              </div>
+            <div class="card-action">
+                <a id=findbtn class="waves-effect waves-light btn">Blast Off</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+  </body>
 </html>
