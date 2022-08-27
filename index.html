@@ -5,55 +5,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="icon" href="./assets/browser-logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Khand&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="icon" href="./assets/browser-logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand&display=swap"
+      rel="stylesheet"
+    />
+
     <script defer src="./assets/js/script.js"></script>
 
     <title>Launch!</title>
-
   </head>
-  <body>
-    <img id="logo-image" src="./assets/Launch Logo.png" alt="launch-logo">
-    <style>
-      body {
-      background-image: url(./assets/background-image.jpg);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      font-family:"khand",sans-serif;
-    }
-    </style>   
-      <!-- welcome card -->
-    <div id="welcome-card" class="row center">
-        <div class="col s12 m6 l6 offset-m3 offset-l3">
-          <div class="card grey darken-4">
-            <div class="card-content light-blue-text text-accent-1">
-              <span id="welcome" class="card-title"><h2>Welcome Astronaut!</h2></span>
-              <div class="row">
-                <div class="input-field col s4 offset-s4">
-                  <input placeholder ="Enter Your Name" value="" id="first_name" type="text" class="validate white-text center">
-                </div>
 
-                <div class="input-field col s6 offset-s3">
-                    <h5 class="light-blue-text text-accent-1">Choose the word that describes you:</h5>
-                    <select id=trait-input class="browser-default s6 white">
-                      <option value="" disabled selected>Select One</option>
-                      <option value="1">Outgoing</option>
-                      <option value="2">Introverted</option>
-                      <option value="3">Brave</option>
-                    </select>
-                  </div>
+  <body>
+    <img id="logo-image" src="./assets/Launch Logo.png" alt="launch-logo" />
+
+    <!-- welcome card -->
+    <div id="welcome-card" class="row center">
+      <div class="col s12 m6 l6 offset-m3 offset-l3">
+        <div class="card grey darken-4">
+          <div class="card-content light-blue-text text-accent-1">
+            <span class="card-title"
+              ><h2 id="welcome">Welcome Astronaut!</h2></span
+            >
+            <div class="row">
+              <div class="input-field col s4 offset-s4">
+                <input
+                  placeholder="Enter Name"
+                  id="first_name"
+                  type="text"
+                  class="validate white-text center"
+                />
               </div>
+
+              <div class="input-field col s6 offset-s3">
+                <h5 class="light-blue-text text-accent-1">
+                  Choose the word that describes you:
+                </h5>
+                <select id="trait-input" class="browser-default s6 white">
+                  <option value="something" disabled selected>
+                    Select One
+                  </option>
+                  <option value="1">Outgoing</option>
+                  <option value="2">Introverted</option>
+                  <option value="3">Brave</option>
+                </select>
+              </div>
+            </div>
             <div class="card-action">
-                <a id="findbtn" class="waves-effect waves-light btn grey-text text-darken-4">Blast Off</a>
+              <a
+                id="findbtn"
+                class="waves-effect waves-light btn grey-text text-darken-4"
+                >Blast Off !</a
+              >
             </div>
           </div>
         </div>
-      </div> 
       </div>
     </div>
 
@@ -62,23 +76,21 @@
       <div class="col s12 m6 l6 offset-m3 offset-l3">
         <div class="card grey darken-4">
           <div class="card-content light-blue-text text-accent-1">
-            <span class="info-card-title"><h2 id="rocket-name">Rocket Name!</h2></span>
+            <span class="info-card-title"><h2 id="rocket-name"></h2></span>
+            <img id="rocket" />
             <div class="row">
-              <div class="input-field col s4 offset-s4">
-              </div>
+              <div id="rocket-info" class="card-action"></div>
             </div>
-          <div id="astroid-info" class="card-action">
+            <div id="asteroid-info" class="card-action"></div>
           </div>
         </div>
       </div>
     </div>
-    
-    </div>
-  </div>
-
-
   </body>
 
-  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-
+  <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
+  ></script>
 </html>

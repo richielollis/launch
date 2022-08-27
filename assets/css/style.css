@@ -1,16 +1,23 @@
+body {
+  background-image: url('../background-image.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family:"khand",sans-serif;
+}
+
 #logo-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-
 .style {
   background-image: url(/assets/background-image.jpg);
   background-size: cover;
  }
 
-
+ 
 /* label color */
 .input-field label {
   color: #ffeb3b;
@@ -49,6 +56,11 @@
 
 #card-title {
   font-size: 72px;
+}
+
+#info-card {
+  display: none;
+
 }
 
 
