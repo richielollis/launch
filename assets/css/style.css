@@ -46,6 +46,11 @@ body {
   color: #ffeb3b;
 }
 
+#were-off {
+  color: #ff5757;
+  display: none;
+}
+
 #findbtn:hover, #close-error:hover, #go-again:hover {
   background-color: #ff5757;
 }
