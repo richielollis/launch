@@ -46,11 +46,11 @@ body {
   color: #ffeb3b;
 }
 
-#findbtn:hover {
+#findbtn:hover, #close-error:hover, #go-again:hover {
   background-color: #ff5757;
 }
 
-#findbtn{
+#findbtn, #close-error, #go-again{
   background-color: #80d8ff; 
 }
 
@@ -63,4 +63,13 @@ body {
 
 }
 
+li {
+  font-size: 1.2em;
+
+}
+
+#error-card {
+  display: none;
+  
+}
 
