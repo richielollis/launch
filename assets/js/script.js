@@ -4,14 +4,20 @@ var today = new Date().toISOString().slice(0,10);
 userData.day = today;
 
 var userName = function(event) {
-    event.prevenDefault();
-    userData = JSON.parse(localStorage.getItem('userData'));
+    event.preventDefault();
+    userData = JSON.parse(localStorage.getItem('name'));
     if(userData && userData.hasOwnProperty('name')) {
         // append name to header
+        $('#span').text('Hey')
     } else {
         // grab name from form input once blastoff button is clicked
+        var name = $('.validate').val();
+        localStorage.setItem('name', name);
         // set name to local storage to be able to be used later and for page reload once user has already entered name
     }
+
+    $('#card').remove();
+    getSpaceInfo();
 }
 
 var getSpaceInfo  = function() {
@@ -42,12 +48,11 @@ var getSpaceInfo  = function() {
 var asteroids = function(nasaInfo) {
     var numberOfAsteroids = nasaInfo.element_count;
     console.log(numberOfAsteroids);
-   // display how many asteroids the astronaut may encounter on their journey to mars 
+    // display how many asteroids the astronaut may encounter on their journey to mars 
 
     
 };
 
-getSpaceInfo();
 
 var body = $('body');
 
@@ -55,7 +60,7 @@ var showUserRocket = function(spacexInfo) {
     // create if statement to check which option the user clicked and which rocket to render
     var rocket = $('<img>');
     rocket.attr('src', spacexInfo[1].flickr_images[0]);
-    rocket.css('width', '350px');
+    rocket.css('width', '30vw');
     rocket.css('margin', '20px');
     body.append(rocket);
 
@@ -67,3 +72,5 @@ var showUserRocket = function(spacexInfo) {
 
 
 //https://api.nasa.gov/insight_weather/?api_key=8mtv2mUNhRq4AdcG3eLJYaGFiJyctDairkAmuZoa&feedtype=json&ver=1.0
+
+$('button').on('click', userName);
