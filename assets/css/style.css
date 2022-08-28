@@ -1,0 +1,75 @@
+body {
+  background-image: url('../images/background-image.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family:"khand",sans-serif;
+}
+
+#logo-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.style {
+  background-image: url('../images/background-image.jpg');
+  background-size: cover;
+ }
+
+ 
+/* label color */
+.input-field label {
+  color: #ffeb3b;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #ffeb3b;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #ffeb3b;
+  box-shadow: 0 1px 0 0 #ffeb3b;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #ffeb3b;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #ffeb3b;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #ffeb3b;
+}
+/* hover style to add to UX */
+#findbtn:hover, #close-error:hover, #go-again:hover {
+  background-color: #ff5757;
+}
+/* button styles */
+#findbtn, #close-error, #go-again{
+  background-color: #80d8ff; 
+}
+
+#card-title {
+  font-size: 72px;
+}
+
+#info-card {
+  display: none;
+
+}
+
+li {
+  font-size: 1.2em;
+
+}
+
+#error-card {
+  display: none;
+  
+}
+
