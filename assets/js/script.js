@@ -86,7 +86,7 @@ var showUserRocket = function(spacexInfo, trait) {
     rocket.attr('src', rocketNumber.flickr_images[num]);
     rocket.css('border-radius', '5px');
     rocket.css('max-width', '30vw');
-    rocket.css('min-width', '300px');
+    // rocket.css('min-width', '300px');
     rocket.css('margin', '20px');
     // grabs rocket info div
     var rocketInfo = $('#rocket-info');
