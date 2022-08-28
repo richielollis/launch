@@ -95,10 +95,10 @@ var showUserRocket = function(spacexInfo, trait) {
     infoDiv.attr('class', 'row');
 
     var infoListDiv = $('<div></div>');
-    infoListDiv.attr('class', 'col s4 right-align');
+    infoListDiv.attr('class', 'col s5 right-align');
   
     var infoListDiv2 = $('<div></div>');
-    infoListDiv2.attr('class', 'offset-s4 col s4 left-align');
+    infoListDiv2.attr('class', 'offset-s2 col s5 left-align');
   
     var infoList = $('<ul></ul>');
     infoList.css('list-decoration', 'none');
