@@ -45,16 +45,11 @@ body {
 .input-field .prefix.active {
   color: #ffeb3b;
 }
-
-#were-off {
-  color: #ff5757;
-  display: none;
-}
-
+/* hover style to add to UX */
 #findbtn:hover, #close-error:hover, #go-again:hover {
   background-color: #ff5757;
 }
-
+/* button styles */
 #findbtn, #close-error, #go-again{
   background-color: #80d8ff; 
 }
