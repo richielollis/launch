@@ -86,7 +86,7 @@ var showUserRocket = function(spacexInfo, trait) {
     rocket.attr('src', rocketNumber.flickr_images[num]);
     rocket.css('border-radius', '5px');
     rocket.css('max-width', '30vw');
-    rocket.css('min-width', '300px');
+    // rocket.css('min-width', '300px');
     rocket.css('margin', '20px');
     // grabs rocket info div
     var rocketInfo = $('#rocket-info');
@@ -95,10 +95,10 @@ var showUserRocket = function(spacexInfo, trait) {
     infoDiv.attr('class', 'row');
 
     var infoListDiv = $('<div></div>');
-    infoListDiv.attr('class', 'col s4 right-align');
+    infoListDiv.attr('class', 'col s5 right-align');
   
     var infoListDiv2 = $('<div></div>');
-    infoListDiv2.attr('class', 'offset-s4 col s4 left-align');
+    infoListDiv2.attr('class', 'offset-s2 col s5 left-align');
   
     var infoList = $('<ul></ul>');
     infoList.css('list-decoration', 'none');

@@ -2,6 +2,7 @@ body {
   background-image: url('../images/background-image.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 100%;
   background-size: cover;
   font-family:"khand",sans-serif;
 }
@@ -73,3 +74,36 @@ li {
   
 }
 
+ /* Media query for mobile devices  */
+ @media only screen and (max-width: 767px) {
+  body {
+    background-image: url('../images/background-image.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:"khand",sans-serif;
+  }
+
+  #rocket {
+    width: 30vw;
+    min-width: 200px;
+
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  body {
+    background-image: url('../images/background-image.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:"khand",sans-serif;
+  }
+
+  #rocket {
+    width: 30vw;
+
+  }
+}
