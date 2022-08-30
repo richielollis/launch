@@ -2,7 +2,7 @@
 
 ## description
 
-This is webpage that allows a user to generate a SpaceX rocket based off of their personality trait.
+This is a webpage that allows a user to generate a SpaceX rocket based off of their personality trait.
 
 ## Usage
 
